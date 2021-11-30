@@ -42,6 +42,10 @@ nmap <leader>gr <Plug>(coc-references)
 nnoremap <C-p> :GFiles<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <F8> :TagbarToggle<CR>
+nnoremap <leader>c :s/\(.*\)/\/\/\1/<CR>
+nnoremap <leader>x :s/\/\/\(.*\)/\1/<CR>
+vnoremap <leader>c :s/\(.*\)/\/\/\1/<CR>
+vnoremap <leader>x :s/\/\/\(.*\)/\1/<CR>
 
 fun! TrimWhitespace()
     let l:save = winsaveview()
